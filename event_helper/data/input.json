@@ -1,0 +1,17 @@
+{
+  "event_data": {
+    "date": "",
+    "time": "",
+    "address": "",
+    "additional_info": "",
+    "prompt": "",
+    "style": {
+      "brief": true,
+      "formal": true
+    }
+  },
+  "weather": null,
+  "messages": [],
+  "final_output": null,
+  "user_feedback": null
+}
