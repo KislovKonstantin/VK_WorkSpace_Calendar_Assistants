@@ -1,0 +1,18 @@
+{
+  "task_data": {
+    "start_date": "",
+    "start_time": "",
+    "end_date": "",
+    "end_time": "",
+    "all_day": true,
+    "additional_info": "",
+    "prompt": "",
+    "style": {
+      "brief": true,
+      "formal": true
+    }
+  },
+  "messages": [],
+  "final_output": null,
+  "user_feedback": null
+}
