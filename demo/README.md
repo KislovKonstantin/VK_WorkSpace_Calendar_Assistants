@@ -1,1 +1,1 @@
-<video src='https://github.com/KislovKonstantin/VK_WorkSpace_Calendar_Assistants/blob/main/demo/greeting_demo.mp4' width=180/>
+https://github.com/user-attachments/assets/d46f96f3-a049-4d13-92cc-198d60dafef8
