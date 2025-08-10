@@ -74,47 +74,47 @@ LLM Провайдер | Google AI Studio | Доступ к продвинуто
 
 1. Загрузите содержимое директории `greeting_service`
 2. В `config.json` вставьте ключи от API Tavily и Google AI Studio
-3.1. Для использования микросервиса без клиента создайте в одной директории с `greeting_service.py` `input.json` и заполните его:
+3. Для использования микросервиса без клиента создайте в одной директории с `greeting_service.py` `input.json` и заполните его:
    - `"date"` - дата запуска календаря (желательно в формате YYYY-MM-DD)
    - `"time"` - время запуска календаря (в формате HH:MM)
-3.2. Установите библиотеки: `pip install langchain_openai langchain_community langchain_core langgraph`
-3.3. Запустите генератор: `python greeting_service.py input.json`
-3.4. Приветствие будет сохранено в `input.json` в поле `"greeting"`
-4.1. Для использования микросервиса через клиент соберите контейнер: `docker build -t greeting_service .`
-4.2. Установите Streamlit: `pip install streamlit`
-4.3. Запустите клиент: `streamlit run client.py`
-4.4. Вводите данные в интерфейсе и получайте результаты
+4. Установите библиотеки: `pip install langchain_openai langchain_community langchain_core langgraph`
+5. Запустите генератор: `python greeting_service.py input.json`
+6. Приветствие будет сохранено в `input.json` в поле `"greeting"`
+7. Для использования микросервиса через клиент соберите контейнер: `docker build -t greeting_service .`
+8. Установите Streamlit: `pip install streamlit`
+9. Запустите клиент: `streamlit run client.py`
+10. Вводите данные в интерфейсе и получайте результаты
 
 **ИИ-ассистент для генерации событий**:
 
 1. Загрузите содержимое директории `event_helper`
 2. В `config.json` вставьте ключи от API Tavily и Google AI Studio
-3.1. Для использования микросервиса без клиента создайте в одной директории с `event_helper.py` `input.json` и заполните его. Обратите внимание на поля:
+3. Для использования микросервиса без клиента создайте в одной директории с `event_helper.py` `input.json` и заполните его. Обратите внимание на поля:
    - `"weather"` - если `null`, то ассистент сам ищет прогноз, иначе использует записанные данные
    - `"messages"` - если `[]`, то диалог с ассистентом инициализируется с нуля, иначе используется записанная история сообщений (состоящая из системного промпта, первого юзер-промпта и звеньев из ответа ассистента и форматированного фидбека)
    - `"user_feedback"` - если запуск с историей сообщений, то нужно заполнить последним фидбеком. Иначе не используется
-3.2. Установите библиотеки: `pip install langchain_openai langchain_community langchain_core langgraph`
-3.3. Запустите ассистента: `python event_helper.py input.json`
-3.4. Название и описание события будут сохранены в подсловарь `"final_output"`
-4.1. Для использования микросервиса через клиент соберите контейнер: `docker build -t event_helper .`
-4.2. Установите Streamlit: `pip install -q streamlit`
-4.3. Запустите клиент: `streamlit run client.py`
-4.4. Вводите данные в интерфейсе и получайте результаты
+4. Установите библиотеки: `pip install langchain_openai langchain_community langchain_core langgraph`
+5. Запустите ассистента: `python event_helper.py input.json`
+6. Название и описание события будут сохранены в подсловарь `"final_output"`
+7. Для использования микросервиса через клиент соберите контейнер: `docker build -t event_helper .`
+8. Установите Streamlit: `pip install -q streamlit`
+9. Запустите клиент: `streamlit run client.py`
+10. Вводите данные в интерфейсе и получайте результаты
 
 **ИИ-ассистент для генерации задач**:
 
 1. Загрузите содержимое директории `task_master`
 2. В `config.json` вставьте ключ от API Google AI Studio
-3.1. Для использования микросервиса без клиента создайте в одной директории с `task_master.py` `input.json` и заполните его. Обратите внимание на поля:
+3. Для использования микросервиса без клиента создайте в одной директории с `task_master.py` `input.json` и заполните его. Обратите внимание на поля:
    - `"messages"` - если `[]`, то диалог с ассистентом инициализируется с нуля, иначе используется записанная история сообщений
    - `"user_feedback"` - если запуск с историей сообщений, то нужно заполнить последним фидбеком. Иначе не используется
-3.2. Установите библиотеки: `pip install langchain_openai langchain_community langchain_core langgraph`
-3.3. Запустите ассистента: `python task_master.py input.json`
-3.4. Название и описание задачи будут сохранены в подсловарь `"final_output"`
-4.1. Для использования микросервиса через клиент соберите контейнер: `docker build -t task_master .`
-4.2. Установите Streamlit: `pip install -q streamlit`
-4.3. Запустите клиент: `streamlit run client.py`
-4.4. Вводите данные в интерфейсе и получайте результаты
+4. Установите библиотеки: `pip install langchain_openai langchain_community langchain_core langgraph`
+5. Запустите ассистента: `python task_master.py input.json`
+6. Название и описание задачи будут сохранены в подсловарь `"final_output"`
+7. Для использования микросервиса через клиент соберите контейнер: `docker build -t task_master .`
+8. Установите Streamlit: `pip install -q streamlit`
+9. Запустите клиент: `streamlit run client.py`
+10. Вводите данные в интерфейсе и получайте результаты
 
 ## Демонстрация
 Видео с работой микросервисов загружены в папку `demo`
