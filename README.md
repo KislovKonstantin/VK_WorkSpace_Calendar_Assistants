@@ -1,3 +1,5 @@
+![alt text](https://github.com/KislovKonstantin/VK_WorkSpace_Calendar_Assistants/blob/main/logo.png?raw=true)
+
 # ИИ-ассистенты для календаря VK WorkSpace
 Проект в рамках VK Education Practice 2025
 
