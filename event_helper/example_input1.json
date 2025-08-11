@@ -1,0 +1,17 @@
+{
+  "event_data": {
+    "date": "2025-08-15",
+    "time": "14:00",
+    "address": "Москва, Парк Горького",
+    "additional_info": "Принести с собой паспорт и хорошее настроение",
+    "prompt": "Опиши событие как встречу выпускников",
+    "style": {
+      "brief": false,
+      "formal": false
+    }
+  },
+  "weather": null,
+  "messages": [],
+  "final_output": null,
+  "user_feedback": null
+}
